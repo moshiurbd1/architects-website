@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0 auto;
+    font-family: Work Sans;
+}
+.light-gray{
+    color: #727272;
+
+
+}
+/* Header styles start */
+header{
+    background: rgba(255, 144, 14, 0.10);
+    padding-top: 1.5rem;
+    padding: 50px 200px;
+}
+nav{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+nav .logo{
+color: #131313;
+
+font-size: 45px;
+font-weight: 700;
+
+}
+.menu-bar{
+    display: flex;
+}
+.menu-bar li{
+    list-style: none;
+    margin: 10px 20px;
+    padding: 5px;
+}
+.menu-bar li a{
+    text-decoration: none;
+    color: #424242;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+/* Header styles end */
+
+/* Banner styles start */
+.banner{
+    
+    text-align: center;
+    margin: 0 auto;
+
+}
+.banner-content{
+    text-align: center;
+    max-width: 800px;
+    margin-bottom: 2rem;
+ 
+}
+.banner-title{
+    margin: 50px 130px 30px 130px;
+    color: #131313;
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+.banner-description{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.btn-primary{
+    padding: 18px 36px;
+    background: #FF900E;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+}
+.banner> img{
+    width: 100%;
+}
+/* Banner styles end */
+
+/* Feature section styles start */
+.feature-section{
+    margin: 50px 200px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 4rem;
+    
+}
+.feature-column-1{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+.feature-column-1>img{
+    width: 250px;
+}
+
+.feature-column-2 .feature-title{
+   
+    color:#131313;
+
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+.feature-title-style{
+    color: #FF900E;
+    font-size: 45px;
+    font-weight: 700;
+}
+.feature-column-2 .feature-description{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 1.5rem;
+}
+
+/* Feature section styles end */
+
+
+
+/* Responsice for small size media devices */
+@media screen and (max-width:576px) {
+    header{
+        padding: 10px;
+    }
+    nav,.feature-section{
+        flex-direction: column;
+    }
+    .banner-content{
+        width: 100%;
+    }
+    .banner> img{
+       width: 90%;
+    }
+    .feature-section{
+        margin: 20px;
+    }
+
+}
+@media screen and (min-width:576px) and (max-width: 960px) {
+   header{
+    padding: 20px;
+   }
+
+   .feature-section{
+    flex-direction: column;
+    margin: 10 150px 0 150px;
+   }
+   .feature-column-1>img{
+    width: 300px;
+   }
+
+    
+}
