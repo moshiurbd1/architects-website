@@ -253,7 +253,7 @@ margin-bottom: 1rem;
 /* Responsice for small size media devices */
 @media screen and (max-width:576px) {
    /* shared styles */
-    .sponsor-company,.feature-column,.feature-section, nav{
+    .sponsor-company,.feature-column,.feature-section,.menu-bar, nav{
         flex-direction: column;
     }
     /* header styles start */
@@ -302,7 +302,7 @@ margin-bottom: 1rem;
 
 @media screen and (min-width:577px) and (max-width:992px){
         /* shared styles */
-  .feature-section{
+    .feature-column,.feature-section,nav{
     flex-direction: column;
   }
     /* header styles start */
@@ -319,11 +319,15 @@ margin-bottom: 1rem;
     .feature-column-1{
         grid-template-columns: repeat(2, 1fr);
     }
-    .feature-column-1>img{
-        width: 450px;
+    .fcolumn-1{
+        margin-bottom: 1.5rem;
     }
     
     /* feature styles end */
-
+    .sponsor-company{
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(3, 1fr);
+    }
     
 }
